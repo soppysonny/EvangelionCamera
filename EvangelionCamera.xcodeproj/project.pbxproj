@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28184F551BC3CAF0007D7C6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28184F541BC3CAF0007D7C6A /* main.m */; };
+		28184F581BC3CAF0007D7C6A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28184F571BC3CAF0007D7C6A /* AppDelegate.m */; };
+		28184F5B1BC3CAF0007D7C6A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28184F5A1BC3CAF0007D7C6A /* ViewController.m */; };
+		28184F5E1BC3CAF0007D7C6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28184F5C1BC3CAF0007D7C6A /* Main.storyboard */; };
+		28184F601BC3CAF0007D7C6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28184F5F1BC3CAF0007D7C6A /* Assets.xcassets */; };
+		28184F631BC3CAF0007D7C6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28184F611BC3CAF0007D7C6A /* LaunchScreen.storyboard */; };
+		28184F6E1BC3CAF0007D7C6A /* EvangelionCameraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28184F6D1BC3CAF0007D7C6A /* EvangelionCameraTests.m */; };
+		28184F791BC3CAF0007D7C6A /* EvangelionCameraUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28184F781BC3CAF0007D7C6A /* EvangelionCameraUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		28184F6A1BC3CAF0007D7C6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28184F481BC3CAF0007D7C6A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28184F4F1BC3CAF0007D7C6A;
+			remoteInfo = EvangelionCamera;
+		};
+		28184F751BC3CAF0007D7C6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28184F481BC3CAF0007D7C6A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28184F4F1BC3CAF0007D7C6A;
+			remoteInfo = EvangelionCamera;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		28184F501BC3CAF0007D7C6A /* EvangelionCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EvangelionCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28184F541BC3CAF0007D7C6A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		28184F561BC3CAF0007D7C6A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		28184F571BC3CAF0007D7C6A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		28184F591BC3CAF0007D7C6A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		28184F5A1BC3CAF0007D7C6A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		28184F5D1BC3CAF0007D7C6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		28184F5F1BC3CAF0007D7C6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		28184F621BC3CAF0007D7C6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		28184F641BC3CAF0007D7C6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28184F691BC3CAF0007D7C6A /* EvangelionCameraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EvangelionCameraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28184F6D1BC3CAF0007D7C6A /* EvangelionCameraTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EvangelionCameraTests.m; sourceTree = "<group>"; };
+		28184F6F1BC3CAF0007D7C6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28184F741BC3CAF0007D7C6A /* EvangelionCameraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EvangelionCameraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28184F781BC3CAF0007D7C6A /* EvangelionCameraUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EvangelionCameraUITests.m; sourceTree = "<group>"; };
+		28184F7A1BC3CAF0007D7C6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28184F4D1BC3CAF0007D7C6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28184F661BC3CAF0007D7C6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28184F711BC3CAF0007D7C6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28184F471BC3CAF0007D7C6A = {
+			isa = PBXGroup;
+			children = (
+				28184F521BC3CAF0007D7C6A /* EvangelionCamera */,
+				28184F6C1BC3CAF0007D7C6A /* EvangelionCameraTests */,
+				28184F771BC3CAF0007D7C6A /* EvangelionCameraUITests */,
+				28184F511BC3CAF0007D7C6A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		28184F511BC3CAF0007D7C6A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28184F501BC3CAF0007D7C6A /* EvangelionCamera.app */,
+				28184F691BC3CAF0007D7C6A /* EvangelionCameraTests.xctest */,
+				28184F741BC3CAF0007D7C6A /* EvangelionCameraUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28184F521BC3CAF0007D7C6A /* EvangelionCamera */ = {
+			isa = PBXGroup;
+			children = (
+				28184F561BC3CAF0007D7C6A /* AppDelegate.h */,
+				28184F571BC3CAF0007D7C6A /* AppDelegate.m */,
+				28184F591BC3CAF0007D7C6A /* ViewController.h */,
+				28184F5A1BC3CAF0007D7C6A /* ViewController.m */,
+				28184F5C1BC3CAF0007D7C6A /* Main.storyboard */,
+				28184F5F1BC3CAF0007D7C6A /* Assets.xcassets */,
+				28184F611BC3CAF0007D7C6A /* LaunchScreen.storyboard */,
+				28184F641BC3CAF0007D7C6A /* Info.plist */,
+				28184F531BC3CAF0007D7C6A /* Supporting Files */,
+			);
+			path = EvangelionCamera;
+			sourceTree = "<group>";
+		};
+		28184F531BC3CAF0007D7C6A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				28184F541BC3CAF0007D7C6A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		28184F6C1BC3CAF0007D7C6A /* EvangelionCameraTests */ = {
+			isa = PBXGroup;
+			children = (
+				28184F6D1BC3CAF0007D7C6A /* EvangelionCameraTests.m */,
+				28184F6F1BC3CAF0007D7C6A /* Info.plist */,
+			);
+			path = EvangelionCameraTests;
+			sourceTree = "<group>";
+		};
+		28184F771BC3CAF0007D7C6A /* EvangelionCameraUITests */ = {
+			isa = PBXGroup;
+			children = (
+				28184F781BC3CAF0007D7C6A /* EvangelionCameraUITests.m */,
+				28184F7A1BC3CAF0007D7C6A /* Info.plist */,
+			);
+			path = EvangelionCameraUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28184F4F1BC3CAF0007D7C6A /* EvangelionCamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28184F7D1BC3CAF0007D7C6A /* Build configuration list for PBXNativeTarget "EvangelionCamera" */;
+			buildPhases = (
+				28184F4C1BC3CAF0007D7C6A /* Sources */,
+				28184F4D1BC3CAF0007D7C6A /* Frameworks */,
+				28184F4E1BC3CAF0007D7C6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EvangelionCamera;
+			productName = EvangelionCamera;
+			productReference = 28184F501BC3CAF0007D7C6A /* EvangelionCamera.app */;
+			productType = "com.apple.product-type.application";
+		};
+		28184F681BC3CAF0007D7C6A /* EvangelionCameraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28184F801BC3CAF0007D7C6A /* Build configuration list for PBXNativeTarget "EvangelionCameraTests" */;
+			buildPhases = (
+				28184F651BC3CAF0007D7C6A /* Sources */,
+				28184F661BC3CAF0007D7C6A /* Frameworks */,
+				28184F671BC3CAF0007D7C6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28184F6B1BC3CAF0007D7C6A /* PBXTargetDependency */,
+			);
+			name = EvangelionCameraTests;
+			productName = EvangelionCameraTests;
+			productReference = 28184F691BC3CAF0007D7C6A /* EvangelionCameraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		28184F731BC3CAF0007D7C6A /* EvangelionCameraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28184F831BC3CAF0007D7C6A /* Build configuration list for PBXNativeTarget "EvangelionCameraUITests" */;
+			buildPhases = (
+				28184F701BC3CAF0007D7C6A /* Sources */,
+				28184F711BC3CAF0007D7C6A /* Frameworks */,
+				28184F721BC3CAF0007D7C6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28184F761BC3CAF0007D7C6A /* PBXTargetDependency */,
+			);
+			name = EvangelionCameraUITests;
+			productName = EvangelionCameraUITests;
+			productReference = 28184F741BC3CAF0007D7C6A /* EvangelionCameraUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28184F481BC3CAF0007D7C6A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = soppysonny;
+				TargetAttributes = {
+					28184F4F1BC3CAF0007D7C6A = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					28184F681BC3CAF0007D7C6A = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 28184F4F1BC3CAF0007D7C6A;
+					};
+					28184F731BC3CAF0007D7C6A = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 28184F4F1BC3CAF0007D7C6A;
+					};
+				};
+			};
+			buildConfigurationList = 28184F4B1BC3CAF0007D7C6A /* Build configuration list for PBXProject "EvangelionCamera" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 28184F471BC3CAF0007D7C6A;
+			productRefGroup = 28184F511BC3CAF0007D7C6A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28184F4F1BC3CAF0007D7C6A /* EvangelionCamera */,
+				28184F681BC3CAF0007D7C6A /* EvangelionCameraTests */,
+				28184F731BC3CAF0007D7C6A /* EvangelionCameraUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28184F4E1BC3CAF0007D7C6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28184F631BC3CAF0007D7C6A /* LaunchScreen.storyboard in Resources */,
+				28184F601BC3CAF0007D7C6A /* Assets.xcassets in Resources */,
+				28184F5E1BC3CAF0007D7C6A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28184F671BC3CAF0007D7C6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28184F721BC3CAF0007D7C6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28184F4C1BC3CAF0007D7C6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28184F5B1BC3CAF0007D7C6A /* ViewController.m in Sources */,
+				28184F581BC3CAF0007D7C6A /* AppDelegate.m in Sources */,
+				28184F551BC3CAF0007D7C6A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28184F651BC3CAF0007D7C6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28184F6E1BC3CAF0007D7C6A /* EvangelionCameraTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28184F701BC3CAF0007D7C6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28184F791BC3CAF0007D7C6A /* EvangelionCameraUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		28184F6B1BC3CAF0007D7C6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28184F4F1BC3CAF0007D7C6A /* EvangelionCamera */;
+			targetProxy = 28184F6A1BC3CAF0007D7C6A /* PBXContainerItemProxy */;
+		};
+		28184F761BC3CAF0007D7C6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28184F4F1BC3CAF0007D7C6A /* EvangelionCamera */;
+			targetProxy = 28184F751BC3CAF0007D7C6A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		28184F5C1BC3CAF0007D7C6A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28184F5D1BC3CAF0007D7C6A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		28184F611BC3CAF0007D7C6A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28184F621BC3CAF0007D7C6A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		28184F7B1BC3CAF0007D7C6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		28184F7C1BC3CAF0007D7C6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		28184F7E1BC3CAF0007D7C6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EvangelionCamera/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zhang.ming.EvangelionCamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		28184F7F1BC3CAF0007D7C6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EvangelionCamera/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zhang.ming.EvangelionCamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		28184F811BC3CAF0007D7C6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EvangelionCameraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zhang.ming.EvangelionCameraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EvangelionCamera.app/EvangelionCamera";
+			};
+			name = Debug;
+		};
+		28184F821BC3CAF0007D7C6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EvangelionCameraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zhang.ming.EvangelionCameraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EvangelionCamera.app/EvangelionCamera";
+			};
+			name = Release;
+		};
+		28184F841BC3CAF0007D7C6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = EvangelionCameraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zhang.ming.EvangelionCameraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = EvangelionCamera;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		28184F851BC3CAF0007D7C6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = EvangelionCameraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zhang.ming.EvangelionCameraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = EvangelionCamera;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28184F4B1BC3CAF0007D7C6A /* Build configuration list for PBXProject "EvangelionCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28184F7B1BC3CAF0007D7C6A /* Debug */,
+				28184F7C1BC3CAF0007D7C6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28184F7D1BC3CAF0007D7C6A /* Build configuration list for PBXNativeTarget "EvangelionCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28184F7E1BC3CAF0007D7C6A /* Debug */,
+				28184F7F1BC3CAF0007D7C6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		28184F801BC3CAF0007D7C6A /* Build configuration list for PBXNativeTarget "EvangelionCameraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28184F811BC3CAF0007D7C6A /* Debug */,
+				28184F821BC3CAF0007D7C6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		28184F831BC3CAF0007D7C6A /* Build configuration list for PBXNativeTarget "EvangelionCameraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28184F841BC3CAF0007D7C6A /* Debug */,
+				28184F851BC3CAF0007D7C6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28184F481BC3CAF0007D7C6A /* Project object */;
+}
