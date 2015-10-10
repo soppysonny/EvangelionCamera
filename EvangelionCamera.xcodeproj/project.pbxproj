@@ -15,6 +15,10 @@
 		28184F631BC3CAF0007D7C6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28184F611BC3CAF0007D7C6A /* LaunchScreen.storyboard */; };
 		28184F6E1BC3CAF0007D7C6A /* EvangelionCameraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28184F6D1BC3CAF0007D7C6A /* EvangelionCameraTests.m */; };
 		28184F791BC3CAF0007D7C6A /* EvangelionCameraUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28184F781BC3CAF0007D7C6A /* EvangelionCameraUITests.m */; };
+		28184F871BC3FB12007D7C6A /* FOT-MatisseVPro-UB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 28184F861BC3FB12007D7C6A /* FOT-MatisseVPro-UB.otf */; settings = {ASSET_TAGS = (); }; };
+		28184F891BC3FBC3007D7C6A /* FOT-MatissePro-UB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 28184F881BC3FBC3007D7C6A /* FOT-MatissePro-UB.otf */; settings = {ASSET_TAGS = (); }; };
+		28184F8A1BC41523007D7C6A /* FOT-MatisseVPro-UB.otf in Sources */ = {isa = PBXBuildFile; fileRef = 28184F861BC3FB12007D7C6A /* FOT-MatisseVPro-UB.otf */; };
+		28184F8D1BC4ADA9007D7C6A /* ZMImageEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28184F8C1BC4ADA9007D7C6A /* ZMImageEditView.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		28184F741BC3CAF0007D7C6A /* EvangelionCameraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EvangelionCameraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28184F781BC3CAF0007D7C6A /* EvangelionCameraUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EvangelionCameraUITests.m; sourceTree = "<group>"; };
 		28184F7A1BC3CAF0007D7C6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28184F861BC3FB12007D7C6A /* FOT-MatisseVPro-UB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FOT-MatisseVPro-UB.otf"; sourceTree = "<group>"; };
+		28184F881BC3FBC3007D7C6A /* FOT-MatissePro-UB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FOT-MatissePro-UB.otf"; sourceTree = "<group>"; };
+		28184F8B1BC4ADA9007D7C6A /* ZMImageEditView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMImageEditView.h; sourceTree = "<group>"; };
+		28184F8C1BC4ADA9007D7C6A /* ZMImageEditView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMImageEditView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +109,14 @@
 		28184F521BC3CAF0007D7C6A /* EvangelionCamera */ = {
 			isa = PBXGroup;
 			children = (
+				28184F861BC3FB12007D7C6A /* FOT-MatisseVPro-UB.otf */,
+				28184F881BC3FBC3007D7C6A /* FOT-MatissePro-UB.otf */,
 				28184F561BC3CAF0007D7C6A /* AppDelegate.h */,
 				28184F571BC3CAF0007D7C6A /* AppDelegate.m */,
 				28184F591BC3CAF0007D7C6A /* ViewController.h */,
 				28184F5A1BC3CAF0007D7C6A /* ViewController.m */,
+				28184F8B1BC4ADA9007D7C6A /* ZMImageEditView.h */,
+				28184F8C1BC4ADA9007D7C6A /* ZMImageEditView.m */,
 				28184F5C1BC3CAF0007D7C6A /* Main.storyboard */,
 				28184F5F1BC3CAF0007D7C6A /* Assets.xcassets */,
 				28184F611BC3CAF0007D7C6A /* LaunchScreen.storyboard */,
@@ -243,6 +255,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28184F871BC3FB12007D7C6A /* FOT-MatisseVPro-UB.otf in Resources */,
+				28184F891BC3FBC3007D7C6A /* FOT-MatissePro-UB.otf in Resources */,
 				28184F631BC3CAF0007D7C6A /* LaunchScreen.storyboard in Resources */,
 				28184F601BC3CAF0007D7C6A /* Assets.xcassets in Resources */,
 				28184F5E1BC3CAF0007D7C6A /* Main.storyboard in Resources */,
@@ -270,6 +284,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28184F8D1BC4ADA9007D7C6A /* ZMImageEditView.m in Sources */,
+				28184F8A1BC41523007D7C6A /* FOT-MatisseVPro-UB.otf in Sources */,
 				28184F5B1BC3CAF0007D7C6A /* ViewController.m in Sources */,
 				28184F581BC3CAF0007D7C6A /* AppDelegate.m in Sources */,
 				28184F551BC3CAF0007D7C6A /* main.m in Sources */,
