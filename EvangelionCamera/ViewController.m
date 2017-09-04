@@ -24,7 +24,7 @@ typedef enum{
 } flashModel;
 
 @interface ViewController ()
-< AVCaptureAudioDataOutputSampleBufferDelegate, UIImagePickerControllerDelegate, UIAlertViewDelegate ,UINavigationBarDelegate>
+< AVCaptureAudioDataOutputSampleBufferDelegate, UIImagePickerControllerDelegate, UIAlertViewDelegate ,UINavigationBarDelegate, AVAudioRecorderDelegate>
 {
     UIImage *_photo;
     BOOL _isFontCamera;
@@ -35,11 +35,15 @@ typedef enum{
 @property (strong, nonatomic) AVCaptureSession           *session;       // 捕获会话
 @property (nonatomic, strong) AVCaptureStillImageOutput  *captureOutput; // 输出设备
 @property (nonatomic, strong) AVCaptureVideoPreviewLayer *previewLayer;  // 取景器
-
+@property (nonatomic, strong) AVAudioRecorder *recorder;
+@property (nonatomic, strong) NSTimer *levelTimer;
+@property (nonatomic, assign) float lastFloat;
 @end
 
 
 @implementation ViewController
+
+
 
 - (AVCaptureSession *)session
 {
@@ -50,12 +54,70 @@ typedef enum{
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
- 
+    self.lastFloat = 0;
     [self.button addTarget:self action:@selector(readLibrary) forControlEvents:UIControlEventTouchUpInside];
     [self.cameraButton addTarget:self action:@selector(takePic) forControlEvents:UIControlEventTouchUpInside];
-    
+    if (!self.recorder) {
+        [[AVAudioSession sharedInstance]
+         setCategory: AVAudioSessionCategoryPlayAndRecord error:nil];
+        
+        /* 不需要保存录音文件 */
+        NSURL *url = [NSURL fileURLWithPath:@"/dev/null"];
+        
+        NSDictionary *settings = [NSDictionary dictionaryWithObjectsAndKeys:
+                                  [NSNumber numberWithFloat: 44100.0], AVSampleRateKey,
+                                  [NSNumber numberWithInt: kAudioFormatAppleLossless], AVFormatIDKey,
+                                  [NSNumber numberWithInt: 2], AVNumberOfChannelsKey,
+                                  [NSNumber numberWithInt: AVAudioQualityMax], AVEncoderAudioQualityKey,
+                                  nil];
+        NSError *error;
+        self.recorder = [[AVAudioRecorder alloc] initWithURL:url settings:settings error:&error];
+        [self.recorder prepareToRecord];
+        self.recorder.meteringEnabled = YES;
+        
+    }
     
 }
+
+- (void)levelTimerCallback:(NSTimer *)timer {
+    [self.recorder updateMeters];
+    
+    float   level;                // The linear 0.0 .. 1.0 value we need.
+    float   minDecibels = -80.0f; // Or use -60dB, which I measured in a silent room.
+    float   decibels    = [self.recorder averagePowerForChannel:0];
+    
+    if (decibels < minDecibels)
+    {
+        level = 0.0f;
+    }
+    else if (decibels >= 0.0f)
+    {
+        level = 1.0f;
+    }
+    else
+    {
+        float   root            = 2.0f;
+        float   minAmp          = powf(10.0f, 0.05f * minDecibels);
+        float   inverseAmpRange = 1.0f / (1.0f - minAmp);
+        float   amp             = powf(10.0f, 0.05f * decibels);
+        float   adjAmp          = (amp - minAmp) * inverseAmpRange;
+        
+        level = powf(adjAmp, 1.0f / root);
+    }
+    float numToRecord = level*120;
+    
+    if (numToRecord - self.lastFloat> 30) {
+        [self.imagelibpicker takePicture];
+        [self.recorder stop];
+        [self.levelTimer invalidate];
+    }
+    self.lastFloat = numToRecord;
+    /* level 范围[0 ~ 1], 转为[0 ~120] 之间 */
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSLog(@"%f", level*120);
+    });
+}
+
 //'ALAuthorizationStatus' is deprecated: first deprecated in iOS 9.0 - Use PHAuthorizationStatus in the Photos framework instead
 - (void)readLibrary{
 
@@ -78,15 +140,16 @@ typedef enum{
 }
 
 - (void)takePic{
+    [self.recorder record];
+    self.levelTimer = [NSTimer scheduledTimerWithTimeInterval: 0.1 target: self selector: @selector(levelTimerCallback:) userInfo: nil repeats: YES];
     _imagelibpicker = [[UIImagePickerController alloc]init];
     _imagelibpicker.sourceType = UIImagePickerControllerSourceTypeCamera;
     _imagelibpicker.delegate = self;
     [self presentViewController:_imagelibpicker animated:YES completion:^{}];
-
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(NSDictionary<NSString *,id> *)editingInfo{
-
+    
     ZMImageEditView* coverView = [[ZMImageEditView alloc]initWithImage:image];
     [self.view addSubview:coverView];
     [self dismissViewControllerAnimated:YES completion:^{

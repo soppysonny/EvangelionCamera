@@ -15,10 +15,10 @@
 		28184F631BC3CAF0007D7C6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28184F611BC3CAF0007D7C6A /* LaunchScreen.storyboard */; };
 		28184F6E1BC3CAF0007D7C6A /* EvangelionCameraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28184F6D1BC3CAF0007D7C6A /* EvangelionCameraTests.m */; };
 		28184F791BC3CAF0007D7C6A /* EvangelionCameraUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28184F781BC3CAF0007D7C6A /* EvangelionCameraUITests.m */; };
-		28184F871BC3FB12007D7C6A /* FOT-MatisseVPro-UB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 28184F861BC3FB12007D7C6A /* FOT-MatisseVPro-UB.otf */; settings = {ASSET_TAGS = (); }; };
-		28184F891BC3FBC3007D7C6A /* FOT-MatissePro-UB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 28184F881BC3FBC3007D7C6A /* FOT-MatissePro-UB.otf */; settings = {ASSET_TAGS = (); }; };
+		28184F871BC3FB12007D7C6A /* FOT-MatisseVPro-UB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 28184F861BC3FB12007D7C6A /* FOT-MatisseVPro-UB.otf */; };
+		28184F891BC3FBC3007D7C6A /* FOT-MatissePro-UB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 28184F881BC3FBC3007D7C6A /* FOT-MatissePro-UB.otf */; };
 		28184F8A1BC41523007D7C6A /* FOT-MatisseVPro-UB.otf in Sources */ = {isa = PBXBuildFile; fileRef = 28184F861BC3FB12007D7C6A /* FOT-MatisseVPro-UB.otf */; };
-		28184F8D1BC4ADA9007D7C6A /* ZMImageEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28184F8C1BC4ADA9007D7C6A /* ZMImageEditView.m */; settings = {ASSET_TAGS = (); }; };
+		28184F8D1BC4ADA9007D7C6A /* ZMImageEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28184F8C1BC4ADA9007D7C6A /* ZMImageEditView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -219,6 +219,7 @@
 				TargetAttributes = {
 					28184F4F1BC3CAF0007D7C6A = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 4PS84RB26P;
 					};
 					28184F681BC3CAF0007D7C6A = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -429,6 +430,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4PS84RB26P;
 				INFOPLIST_FILE = EvangelionCamera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zhang.ming.EvangelionCamera;
@@ -440,6 +442,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4PS84RB26P;
 				INFOPLIST_FILE = EvangelionCamera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zhang.ming.EvangelionCamera;
@@ -514,6 +517,7 @@
 				28184F7F1BC3CAF0007D7C6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		28184F801BC3CAF0007D7C6A /* Build configuration list for PBXNativeTarget "EvangelionCameraTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +526,7 @@
 				28184F821BC3CAF0007D7C6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		28184F831BC3CAF0007D7C6A /* Build configuration list for PBXNativeTarget "EvangelionCameraUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +535,7 @@
 				28184F851BC3CAF0007D7C6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
