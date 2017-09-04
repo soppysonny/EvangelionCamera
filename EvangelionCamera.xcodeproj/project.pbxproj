@@ -19,6 +19,8 @@
 		28184F891BC3FBC3007D7C6A /* FOT-MatissePro-UB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 28184F881BC3FBC3007D7C6A /* FOT-MatissePro-UB.otf */; };
 		28184F8A1BC41523007D7C6A /* FOT-MatisseVPro-UB.otf in Sources */ = {isa = PBXBuildFile; fileRef = 28184F861BC3FB12007D7C6A /* FOT-MatisseVPro-UB.otf */; };
 		28184F8D1BC4ADA9007D7C6A /* ZMImageEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28184F8C1BC4ADA9007D7C6A /* ZMImageEditView.m */; };
+		6B08A10B1F5D7D160092E5EA /* MangaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B08A10A1F5D7D160092E5EA /* MangaViewController.m */; };
+		6B08A10F1F5D81CD0092E5EA /* UIView+FrameExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B08A10D1F5D81CC0092E5EA /* UIView+FrameExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,11 @@
 		28184F881BC3FBC3007D7C6A /* FOT-MatissePro-UB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FOT-MatissePro-UB.otf"; sourceTree = "<group>"; };
 		28184F8B1BC4ADA9007D7C6A /* ZMImageEditView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMImageEditView.h; sourceTree = "<group>"; };
 		28184F8C1BC4ADA9007D7C6A /* ZMImageEditView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMImageEditView.m; sourceTree = "<group>"; };
+		6B08A1091F5D7D160092E5EA /* MangaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MangaViewController.h; sourceTree = "<group>"; };
+		6B08A10A1F5D7D160092E5EA /* MangaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MangaViewController.m; sourceTree = "<group>"; };
+		6B08A10C1F5D807D0092E5EA /* EvaPrefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EvaPrefix.pch; sourceTree = "<group>"; };
+		6B08A10D1F5D81CC0092E5EA /* UIView+FrameExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+FrameExtension.m"; path = "../../JSOnline/JSOnline/UIView+FrameExtension.m"; sourceTree = "<group>"; };
+		6B08A10E1F5D81CC0092E5EA /* UIView+FrameExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+FrameExtension.h"; path = "../../JSOnline/JSOnline/UIView+FrameExtension.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,11 +124,16 @@
 				28184F5A1BC3CAF0007D7C6A /* ViewController.m */,
 				28184F8B1BC4ADA9007D7C6A /* ZMImageEditView.h */,
 				28184F8C1BC4ADA9007D7C6A /* ZMImageEditView.m */,
+				6B08A1091F5D7D160092E5EA /* MangaViewController.h */,
+				6B08A10A1F5D7D160092E5EA /* MangaViewController.m */,
+				6B08A10E1F5D81CC0092E5EA /* UIView+FrameExtension.h */,
+				6B08A10D1F5D81CC0092E5EA /* UIView+FrameExtension.m */,
 				28184F5C1BC3CAF0007D7C6A /* Main.storyboard */,
 				28184F5F1BC3CAF0007D7C6A /* Assets.xcassets */,
 				28184F611BC3CAF0007D7C6A /* LaunchScreen.storyboard */,
 				28184F641BC3CAF0007D7C6A /* Info.plist */,
 				28184F531BC3CAF0007D7C6A /* Supporting Files */,
+				6B08A10C1F5D807D0092E5EA /* EvaPrefix.pch */,
 			);
 			path = EvangelionCamera;
 			sourceTree = "<group>";
@@ -219,7 +231,7 @@
 				TargetAttributes = {
 					28184F4F1BC3CAF0007D7C6A = {
 						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = 4PS84RB26P;
+						DevelopmentTeam = P2YYAZU95S;
 					};
 					28184F681BC3CAF0007D7C6A = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -288,8 +300,10 @@
 				28184F8D1BC4ADA9007D7C6A /* ZMImageEditView.m in Sources */,
 				28184F8A1BC41523007D7C6A /* FOT-MatisseVPro-UB.otf in Sources */,
 				28184F5B1BC3CAF0007D7C6A /* ViewController.m in Sources */,
+				6B08A10B1F5D7D160092E5EA /* MangaViewController.m in Sources */,
 				28184F581BC3CAF0007D7C6A /* AppDelegate.m in Sources */,
 				28184F551BC3CAF0007D7C6A /* main.m in Sources */,
+				6B08A10F1F5D81CD0092E5EA /* UIView+FrameExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,7 +444,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4PS84RB26P;
+				DEVELOPMENT_TEAM = P2YYAZU95S;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/EvangelionCamera/EvaPrefix.pch";
 				INFOPLIST_FILE = EvangelionCamera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zhang.ming.EvangelionCamera;
@@ -442,7 +458,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4PS84RB26P;
+				DEVELOPMENT_TEAM = P2YYAZU95S;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/EvangelionCamera/EvaPrefix.pch";
 				INFOPLIST_FILE = EvangelionCamera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zhang.ming.EvangelionCamera;

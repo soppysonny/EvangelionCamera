@@ -12,6 +12,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import <AssetsLibrary/AssetsLibrary.h>
 #import "ZMImageEditView.h"
+#import "MangaViewController.h"
 typedef enum{
     isFrontCamera = 0,
     isBackCamera
@@ -31,6 +32,7 @@ typedef enum{
 }
 @property (weak, nonatomic) IBOutlet UIButton *cameraButton;
 @property (weak, nonatomic) IBOutlet UIButton *button;
+@property (weak, nonatomic) IBOutlet UIButton *makeMangaBt;
 @property (strong, nonatomic)UIImagePickerController* imagelibpicker;
 @property (strong, nonatomic) AVCaptureSession           *session;       // 捕获会话
 @property (nonatomic, strong) AVCaptureStillImageOutput  *captureOutput; // 输出设备
@@ -38,12 +40,16 @@ typedef enum{
 @property (nonatomic, strong) AVAudioRecorder *recorder;
 @property (nonatomic, strong) NSTimer *levelTimer;
 @property (nonatomic, assign) float lastFloat;
+
 @end
 
 
 @implementation ViewController
 
-
+- (IBAction)makeManga:(id)sender {
+    MangaViewController* manga = [MangaViewController new];
+    [self presentViewController:manga animated:YES completion:nil];
+}
 
 - (AVCaptureSession *)session
 {
