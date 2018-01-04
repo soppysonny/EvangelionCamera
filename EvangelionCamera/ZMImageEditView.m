@@ -26,7 +26,7 @@
 
 - (UILabel *)titleLable{
     if (!_titleLable) {
-        _titleLable = [[UILabel alloc]initWithFrame:CGRectMake(0, SCREENHEIGHT - 50, SCREENWIDTH*0.8, 50)];
+        _titleLable = [[UILabel alloc]initWithFrame:CGRectMake(0, SCREENHEIGHT - 50, SCREENWIDTH*0.8, 150)];
         _titleLable.numberOfLines = 0;
         _titleLable.font = [UIFont fontWithName:@"MatisseVPro-UB" size:30];
         _titleLable.text = @"零号機、参上";

@@ -66,6 +66,7 @@
 		6B08A10C1F5D807D0092E5EA /* EvaPrefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EvaPrefix.pch; sourceTree = "<group>"; };
 		6B08A10D1F5D81CC0092E5EA /* UIView+FrameExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+FrameExtension.m"; path = "../../JSOnline/JSOnline/UIView+FrameExtension.m"; sourceTree = "<group>"; };
 		6B08A10E1F5D81CC0092E5EA /* UIView+FrameExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+FrameExtension.h"; path = "../../JSOnline/JSOnline/UIView+FrameExtension.h"; sourceTree = "<group>"; };
+		6B08A1101F5EE8760092E5EA /* ViewController+Whatever.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+Whatever.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +128,7 @@
 				6B08A1091F5D7D160092E5EA /* MangaViewController.h */,
 				6B08A10A1F5D7D160092E5EA /* MangaViewController.m */,
 				6B08A10E1F5D81CC0092E5EA /* UIView+FrameExtension.h */,
+				6B08A1101F5EE8760092E5EA /* ViewController+Whatever.h */,
 				6B08A10D1F5D81CC0092E5EA /* UIView+FrameExtension.m */,
 				28184F5C1BC3CAF0007D7C6A /* Main.storyboard */,
 				28184F5F1BC3CAF0007D7C6A /* Assets.xcassets */,

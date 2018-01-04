@@ -32,6 +32,8 @@
 	<string>EvaCam直播需要您的同意才能访问麦克风</string>
 	<key>NSPhotoLibraryUsageDescription - 2</key>
 	<string>EvaCam直播需要您的同意才能读取媒体资料库</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>EvaCam直播需要您的同意才能写入媒体资料库</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>FOT-MatisseVPro-UB.otf</string>
