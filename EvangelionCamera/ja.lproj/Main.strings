@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; normalTitle = "選択\b照片"; ObjectID = "GRc-z2-ZKE"; */
+"GRc-z2-ZKE.normalTitle" = "写真を選択";
+
+/* Class = "UIButton"; normalTitle = "拍撮照片"; ObjectID = "MO9-LW-MZ2"; */
+"MO9-LW-MZ2.normalTitle" = "撮影";
+
+/* Class = "UILabel"; text = "人類自拍補完計画"; ObjectID = "Wrq-ft-Zkk"; */
+"Wrq-ft-Zkk.text" = "人類自撮補完計画";
+
+/* Class = "UIButton"; normalTitle = "制作四格漫画"; ObjectID = "iK7-Sd-USt"; */
+"iK7-Sd-USt.normalTitle" = "四コマ漫画";

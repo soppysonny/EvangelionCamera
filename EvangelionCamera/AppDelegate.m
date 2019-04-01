@@ -7,7 +7,12 @@
 //
 
 #import "AppDelegate.h"
-
+#import <GoogleMobileAds/GoogleMobileAds.h>
+#import "UMVideoAd.h"
+#import <Bugly/Bugly.h>
+#define GoogleAd @"ca-app-pub-1709854646699078~7687881625"
+#define YoumiAd @"a09cc5c369809a6f"
+#define YoumiKey @"68a76eda7ac9e1a7"
 @interface AppDelegate ()
 
 @end
@@ -15,8 +20,9 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
+    [Bugly startWithAppId:@"41c1606409"];
+    [UMVideoAd initAppID:YoumiAd appKey:YoumiKey cacheVideo:YES];
     return YES;
 }
 
@@ -36,6 +42,7 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    [GADMobileAds configureWithApplicationID:GoogleAd];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {

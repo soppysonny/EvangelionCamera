@@ -1,0 +1,28 @@
+PODS:
+  - Bugly (2.5.0)
+  - Google-Mobile-Ads-SDK (7.30.0)
+  - Masonry (1.1.0)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - Bugly
+  - Google-Mobile-Ads-SDK
+  - Masonry
+  - SVProgressHUD (~> 2.2.5)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Bugly
+    - Google-Mobile-Ads-SDK
+    - Masonry
+    - SVProgressHUD
+
+SPEC CHECKSUMS:
+  Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
+  Google-Mobile-Ads-SDK: 7404f68120ae8682afeb5af001fbf4aad731c78e
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: d18c1cd4d25b28edfab5191819c13f205b6c613c
+
+COCOAPODS: 1.5.3

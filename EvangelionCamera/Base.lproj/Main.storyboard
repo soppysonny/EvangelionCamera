@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -35,10 +35,7 @@
                                     <constraint firstAttribute="height" constant="30" id="rIe-eK-28G"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MatisseVPro-UB" family="FOT-MatisseV Pro" pointSize="15"/>
-                                <state key="normal">
-                                    <string key="title" base64-UTF8="YES">
-6YG45oqeCOeFp+eJhw
-</string>
+                                <state key="normal" title="Choose from Album">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -62,7 +59,7 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="192" id="yn1-NZ-AfV"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MatisseVPro-UB" family="FOT-MatisseV Pro" pointSize="15"/>
-                                <state key="normal" title="拍撮照片">
+                                <state key="normal" title="Take Photo">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -75,7 +72,7 @@
                                     <constraint firstAttribute="width" constant="192" id="Z7Y-wo-cRe"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MatisseVPro-UB" family="FOT-MatisseV Pro" pointSize="15"/>
-                                <state key="normal" title="制作四格漫画">
+                                <state key="normal" title="Four-frame Manga">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>

@@ -7,8 +7,10 @@
 //lable旋转手势、屏幕方向旋转
 
 #import "ZMImageEditView.h"
+#import "ZMStrategy.h"
 #define SCREENWIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREENHEIGHT [UIScreen mainScreen].bounds.size.height
+
 @implementation ZMImageEditView
 
 /*
@@ -26,7 +28,7 @@
 
 - (UILabel *)titleLable{
     if (!_titleLable) {
-        _titleLable = [[UILabel alloc]initWithFrame:CGRectMake(0, SCREENHEIGHT - 50, SCREENWIDTH*0.8, 150)];
+        _titleLable = [[UILabel alloc]initWithFrame:CGRectMake(0, SCREENHEIGHT - 150, SCREENWIDTH*0.8, 150)];
         _titleLable.numberOfLines = 0;
         _titleLable.font = [UIFont fontWithName:@"MatisseVPro-UB" size:30];
         _titleLable.text = @"零号機、参上";
@@ -49,6 +51,8 @@
 - (void)removeEditView{
     [UIView animateWithDuration:0.4 animations:^{
         self.transform = CGAffineTransformMakeTranslation(0, SCREENHEIGHT);
+    }completion:^(BOOL finished){
+        [self removeFromSuperview];
     }];
 
     //[self removeFromSuperview];
@@ -76,8 +80,29 @@
     [self.layer renderInContext:ctx];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-    UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
     [self removeEditView];
+    if ([ZMStrategy isCN]) {
+        if (![self showAlertWithImage:image]) {
+            [[NSNotificationCenter defaultCenter]postNotificationName:@"showYoumi" object:image];
+        }
+    }else{
+        UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
+    }
+}
+
+- (BOOL)showAlertWithImage:(UIImage *)image{
+    NSString* a = [[NSUserDefaults standardUserDefaults]objectForKey:@"showalertguide"];
+    if (a) {
+        return NO;
+    }
+    [[NSUserDefaults standardUserDefaults]setObject:@"1" forKey:@"showalertguide"];
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"即将展示广告, 观看完即可自动保存图片" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction* action = [UIAlertAction actionWithTitle:@"好" style:UIAlertActionStyleDefault handler:^(UIAlertAction* action){
+            [[NSNotificationCenter defaultCenter]postNotificationName:@"showYoumi" object:image];
+    }];
+    [alert addAction:action];
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alert animated:YES completion:nil];
+    return YES;
 }
 
 - (UIButton *)setTitle{

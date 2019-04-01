@@ -1,0 +1,7 @@
+target 'EvangelionCamera' do
+pod 'SVProgressHUD', '~> 2.2.5'
+pod 'Google-Mobile-Ads-SDK'
+pod 'Masonry'
+pod 'Bugly'
+
+end
